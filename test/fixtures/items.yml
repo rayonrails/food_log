@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  meal_time_id: 1
+  name: MyString
+  ate_at: 2013-05-14
+
+two:
+  meal_time_id: 1
+  name: MyString
+  ate_at: 2013-05-14

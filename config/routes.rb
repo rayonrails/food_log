@@ -1,4 +1,7 @@
 FoodLog::Application.routes.draw do
+  resources :items
+
+
   resources :meal_times
 
 
