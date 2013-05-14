@@ -1,4 +1,7 @@
 FoodLog::Application.routes.draw do
+  resources :meal_times
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
