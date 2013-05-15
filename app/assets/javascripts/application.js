@@ -18,3 +18,6 @@
 $(function() {
   $('#item_ate_at').datepicker();
 });
+$(function() {
+  $('#weight_weigh_at').datepicker();
+});
