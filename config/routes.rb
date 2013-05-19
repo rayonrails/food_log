@@ -1,13 +1,10 @@
 FoodLog::Application.routes.draw do
   resources :weights
-
-
   resources :items
-
-
   resources :meal_times
-
-
+  match 'auth/:provider/callback' => 'sessions#create'
+  match 'signout', to: 'sessions#destroy', as: 'signout'
+  root :to => 'weights#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
