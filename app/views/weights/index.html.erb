@@ -5,7 +5,7 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:user_id) %></th>
       <th><%= model_class.human_attribute_name(:amount) %></th>
       <th><%= model_class.human_attribute_name(:weigh_at) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
@@ -15,7 +15,7 @@
   <tbody>
     <% @weights.each do |weight| %>
       <tr>
-        <td><%= link_to weight.id, weight_path(weight) %></td>
+        <td><%= link_to weight.user.name, weight_path(weight) %></td>
         <td><%= weight.amount %></td>
         <td><%= weight.weigh_at %></td>
         <td><%=l weight.created_at %></td>

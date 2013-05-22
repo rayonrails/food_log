@@ -16,8 +16,8 @@
 //= require twitter/bootstrap
 //= require_tree .
 $(function() {
-  $('#item_ate_at').datepicker();
+  $('#item_ate_at').datepicker({ dateFormat: 'yy-mm-dd' });
 });
 $(function() {
-  $('#weight_weigh_at').datepicker();
+  $('#weight_weigh_at').datepicker({ dateFormat: 'yy-mm-dd' });
 });

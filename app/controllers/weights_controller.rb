@@ -40,7 +40,8 @@ class WeightsController < ApplicationController
   # POST /weights
   # POST /weights.json
   def create
-    @weight = Weight.new(params[:weight])
+    @weight = current_user.weights.build(params[:weight])
+    #@weight = Weight.new(params[:weight])
 
     respond_to do |format|
       if @weight.save
